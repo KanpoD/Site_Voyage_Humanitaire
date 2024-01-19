@@ -1,4 +1,16 @@
+//Varaibles
+@import "utils/variables";
+
+//Pages
 @import "pages/homepage";
+
+//Base
 @import "base/base";
+
+//Layouts
 @import "layouts/card";
+@import "layouts/quickPresentation";
+@import "layouts/decorations";
+
+//Components
 @import "components/inputs";
