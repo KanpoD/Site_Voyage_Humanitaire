@@ -19,6 +19,7 @@
   bottom: 0;
   filter: brightness(0.75) saturate(1.2) contrast(0.85);
   transform-origin: center;
+  cursor: help;
 }
 
 .quick__links {
@@ -29,6 +30,7 @@
 }
 
 .quick__links a {
+  font-size: $text-medium;
   width: 35%;
 }
 
@@ -44,10 +46,16 @@
   #about-container {
     width: 90%;
   }
+  .quick__links a {
+    font-size: $text-small;
+  }
 }
 
 @media (min-width: 960px) {
   #about-container {
-    width: 90%;
+    width: 65%;
+  }
+  .quick__links a {
+    font-size: $text-small;
   }
 }

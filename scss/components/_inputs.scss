@@ -4,8 +4,9 @@ button {
   font-weight: bold;
 }
 
-a,
-button {
+.card a,
+#btn_shower,
+.quick__links a {
   background-image: linear-gradient(
     to right,
     #457fca 0%,
@@ -24,8 +25,9 @@ button {
   transition: all 0.3s ease;
 }
 
-a:hover,
-button:hover {
+.card a:hover,
+#btn_shower:hover,
+.quick__links a:hover {
   background-position: right center; /* change the direction of the change here */
   color: #fff;
   box-shadow: 0 0 10px #eee;
