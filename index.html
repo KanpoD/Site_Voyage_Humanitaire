@@ -1,42 +1,281 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,700"
+      rel="stylesheet"
+    />
+    <script src="script.js"></script>
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <h1>SITE</h1>
 
     <main>
-        <section class="hero-section">
-            <div class="card-container">
-              <a class="card" href="#">
-                <div class="card__background" style="background-image: url(https://images.ctfassets.net/rc3dlxapnu6k/570NpopOInLZWegXyC73n8/9e57488ad42652a6616b57110a07e07b/Peru__Machu_Picchu__Lama.jpg?w=3456&h=1944&q=50&fm=webp)"></div>
-                <div class="card__content">
-                  <p class="card__price">Price</p>
-                  <h3 class="card__heading">Pérou</h3>
-                </div>
-              </a>
-              <a class="card" href="#">
-                <div class="card__background" style="background-image: url(https://images.ctfassets.net/rc3dlxapnu6k/570NpopOInLZWegXyC73n8/9e57488ad42652a6616b57110a07e07b/Peru__Machu_Picchu__Lama.jpg?w=3456&h=1944&q=50&fm=webp)"></div>
-                <div class="card__content">
-                  <p class="card__price">Price</p>
-                  <h3 class="card__heading">Pérou</h3>
-                </div>
-              </a>
-              <a class="card" href="#">
-                <div class="card__background" style="background-image: url(https://images.ctfassets.net/rc3dlxapnu6k/570NpopOInLZWegXyC73n8/9e57488ad42652a6616b57110a07e07b/Peru__Machu_Picchu__Lama.jpg?w=3456&h=1944&q=50&fm=webp)"></div>
-                <div class="card__content">
-                  <p class="card__price">Price</p>
-                  <h3 class="card__heading">Pérou</h3>
-                </div>
-              </a>
-            <div>
-        </section>
-    </main>
+      <section id="hero-section">
+        <div class="card__container">
+          <div class="card">
+            <div class="card__details">
+              <p>
+                Voyagez au Pérou, vivez une aventure unique en aidant à prendre
+                soin des lamas. <br /><br />Contribuez à la préservation de ces
+                créatures emblématiques tout en explorant les paysages
+                époustouflants des Andes.
+              </p>
+              <a>En savoir plus</a>
+            </div>
 
-</body>
+            <div
+              class="card__background"
+              style="
+                background-image: url(https://images.ctfassets.net/rc3dlxapnu6k/570NpopOInLZWegXyC73n8/9e57488ad42652a6616b57110a07e07b/Peru__Machu_Picchu__Lama.jpg?w=3456&h=1944&q=50&fm=webp);
+              "
+            ></div>
+
+            <div class="card__content">
+              <h3 class="card__heading">Pérou</h3>
+              <p class="card__price">999.99$</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card__details">
+              <p>
+                Découvrez les plantations de café en Indonésie tout en soutenant
+                les cultivateurs. <br /><br />Participez à la récolte, explorez
+                les saveurs authentiques et partagez des moments uniques avec la
+                communauté locale.
+              </p>
+              <a>En savoir plus</a>
+            </div>
+
+            <div
+              class="card__background"
+              style="
+                background-image: url(https://imagelecourrier.vnanet.vn/MediaUpload/Org/2023/09/19/153112-indonesia-1459416_1280.jpg);
+              "
+            ></div>
+            <div class="card__content">
+              <h3 class="card__heading">Indonésie</h3>
+              <p class="card__price">755.99$</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card__details">
+              <p>
+                Joignez l'utile à l'agréable en explorant les plages
+                australiennes tout en participant au nettoyage côtier.
+                <br /><br />
+                Contribuez à la préservation de l'écosystème marin, découvrez
+                des paysages exceptionnels et vivez une expérience engagée.
+              </p>
+              <a>En savoir plus</a>
+            </div>
+
+            <div
+              class="card__background"
+              style="
+                background-image: url(https://ds.static.rtbf.be/article/image/1920xAuto/b/9/2/560a0cac2faa0b01b92fc84af2323f1b-1609770088.jpg);
+              "
+            ></div>
+            <div class="card__content">
+              <h3 class="card__heading">Australie</h3>
+              <p class="card__price">1199.99$</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card__container">
+          <div class="card">
+            <div class="card__details">
+              <p>
+                Apportez votre aide aux paysans tibétains tout en vivant à leurs
+                côtés. <br /><br />
+                Participez aux activités agricoles de jour et découvrez
+                l'authenticité du Tibet la nuit en dormant dans leur ferme.
+              </p>
+              <a>En savoir plus</a>
+            </div>
+            <div
+              class="card__background"
+              style="
+                background-image: url(https://upload.wikimedia.org/wikipedia/commons/d/d0/Farmer_in_Tibet.jpg);
+              "
+            ></div>
+            <div class="card__content">
+              <h3 class="card__heading">Tibet</h3>
+              <p class="card__price">789.99$</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card__details">
+              <p>
+                Participez à la préservation des manchots en Afrique du Sud en
+                aidant à construire des nids. <br /><br />
+                Impliquez-vous dans la protection de ces oiseaux emblématiques
+                en travaillant à la création de nids confortables.
+              </p>
+              <a>En savoir plus</a>
+            </div>
+            <div
+              class="card__background"
+              style="
+                background-image: url(https://images.ctfassets.net/rc3dlxapnu6k/1QOVNOUzpLvUeyGcU0nSC9/989d3d9de60747eb6d2481b5f4bd024c/Boulders_Penguin_Colony_National_Park__South_Africa..jpg?w=2121&h=1414&fl=progressive&q=50&fm=jpg);
+              "
+            ></div>
+            <div class="card__content">
+              <h3 class="card__heading">Afrique du sud</h3>
+              <p class="card__price">679.99$</p>
+            </div>
+          </div>
+        </div>
+        <div id="card__toggle" class="hidden">
+          <div class="card__container">
+            <div class="card">
+              <div class="card__details">
+                <p>
+                  Voyagez au Pérou, vivez une aventure unique en aidant à
+                  prendre soin des lamas. <br /><br />Contribuez à la
+                  préservation de ces créatures emblématiques tout en explorant
+                  les paysages époustouflants des Andes.
+                </p>
+                <a>En savoir plus</a>
+              </div>
+
+              <div
+                class="card__background"
+                style="
+                  background-image: url(https://images.ctfassets.net/rc3dlxapnu6k/570NpopOInLZWegXyC73n8/9e57488ad42652a6616b57110a07e07b/Peru__Machu_Picchu__Lama.jpg?w=3456&h=1944&q=50&fm=webp);
+                "
+              ></div>
+
+              <div class="card__content">
+                <h3 class="card__heading">Pérou</h3>
+                <p class="card__price">999.99$</p>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card__details">
+                <p>
+                  Découvrez les plantations de café en Indonésie tout en
+                  soutenant les cultivateurs. <br /><br />Participez à la
+                  récolte, explorez les saveurs authentiques et partagez des
+                  moments uniques avec la communauté locale.
+                </p>
+                <a>En savoir plus</a>
+              </div>
+
+              <div
+                class="card__background"
+                style="
+                  background-image: url(https://imagelecourrier.vnanet.vn/MediaUpload/Org/2023/09/19/153112-indonesia-1459416_1280.jpg);
+                "
+              ></div>
+              <div class="card__content">
+                <h3 class="card__heading">Indonésie</h3>
+                <p class="card__price">659.99$</p>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card__details">
+                <p>
+                  Joignez l'utile à l'agréable en explorant les plages
+                  australiennes tout en participant au nettoyage côtier.
+                  <br /><br />
+                  Contribuez à la préservation de l'écosystème marin, découvrez
+                  des paysages exceptionnels et vivez une expérience engagée.
+                </p>
+                <a>En savoir plus</a>
+              </div>
+
+              <div
+                class="card__background"
+                style="
+                  background-image: url(https://ds.static.rtbf.be/article/image/1920xAuto/b/9/2/560a0cac2faa0b01b92fc84af2323f1b-1609770088.jpg);
+                "
+              ></div>
+              <div class="card__content">
+                <h3 class="card__heading">Australie</h3>
+                <p class="card__price">655.99$</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card__container">
+            <div class="card">
+              <div class="card__details">
+                <p>
+                  Apportez votre aide aux paysans tibétains tout en vivant à
+                  leurs côtés. <br /><br />
+                  Participez aux activités agricoles de jour et découvrez
+                  l'authenticité du Tibet la nuit en dormant dans leur ferme.
+                </p>
+                <a>En savoir plus</a>
+              </div>
+              <div
+                class="card__background"
+                style="
+                  background-image: url(https://upload.wikimedia.org/wikipedia/commons/d/d0/Farmer_in_Tibet.jpg);
+                "
+              ></div>
+              <div class="card__content">
+                <h3 class="card__heading">Tibet</h3>
+                <p class="card__price">1199.99$</p>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card__details">
+                <p>
+                  Participez à la préservation des manchots en Afrique du Sud en
+                  aidant à construire des nids. <br /><br />
+                  Impliquez-vous dans la protection de ces oiseaux emblématiques
+                  en travaillant à la création de nids confortables.
+                </p>
+                <a>En savoir plus</a>
+              </div>
+              <div
+                class="card__background"
+                style="
+                  background-image: url(https://images.ctfassets.net/rc3dlxapnu6k/1QOVNOUzpLvUeyGcU0nSC9/989d3d9de60747eb6d2481b5f4bd024c/Boulders_Penguin_Colony_National_Park__South_Africa..jpg?w=2121&h=1414&fl=progressive&q=50&fm=jpg);
+                "
+              ></div>
+              <div class="card__content">
+                <h3 class="card__heading">Afrique du sud</h3>
+                <p class="card__price">990.99$</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div id="card__button">
+        <button id="btn_shower">Afficher plus de voyages</button>
+      </div>
+
+      <div id="delimiter">
+        <span></span>
+      </div>
+
+      <section id="about-container">
+        <img src="https://images.pexels.com/photos/2709563/pexels-photo-2709563.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="PDG de l'entreprise en action bénévole">
+        <div id="about-left">
+            <p>Explorez, découvrez, agissez. Nos voyages uniques allient aventure et engagement. Voyagez avec un impact positif.</p>
+            <div class="quick__links"> 
+                <a href="#">Faire un don</a>
+                <a href="#">Pourquoi nous choisir ?</a>
+            </div>
+
+        </div>
+        
+      </section>
+    </main>
+  </body>
 </html>
