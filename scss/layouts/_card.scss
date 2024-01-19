@@ -1,0 +1,153 @@
+@mixin flex-container($direction: column, $justify: space-between) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+}
+
+@mixin flex-item($basis: 50%, $margin: 1em) {
+  flex-basis: calc($basis - #{$spacing-l});
+  margin: $margin;
+}
+
+#hero-section {
+  @include flex-container(column);
+  min-height: 100%;
+  width: 80%;
+}
+
+.card__container {
+  @include flex-container(row, unset);
+}
+.card,
+.card__price,
+.card__heading,
+.card__details p,
+.card__details a,
+#card__button {
+  transition: all 0.3s ease;
+}
+
+.card {
+  @include flex-item();
+  list-style: none;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  min-height: 35vh;
+}
+
+.card__background {
+  background-size: cover;
+  background-position: center;
+  bottom: 0;
+  filter: brightness(0.75) saturate(1.2) contrast(0.85);
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform-origin: center;
+  transform: scale(1) translateZ(0);
+  transition: all 0.5s ease;
+}
+
+.card:hover .card__background {
+  transform: scale(1.05) translateZ(0);
+  filter: brightness(0.3);
+}
+
+.card:hover .card__price {
+  transform: scale(0.9) translateX(1em);
+}
+
+.card:hover .card__heading {
+  opacity: 0;
+}
+
+.card__content {
+  left: 0;
+  padding: $spacing-s;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.card__price {
+  color: white;
+  position: absolute;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.65);
+  padding: 1em;
+  border-radius: 20px 0 0 0;
+  font-size: $text-large;
+  text-transform: uppercase;
+}
+
+.card__heading {
+  color: $text-lighter;
+  font-size: $text-xxlarge;
+  text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card__details {
+  color: $text-light;
+  padding: $spacing-s;
+  font-size: $text-medium;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.card__details p {
+  font-size: $text-medium;
+  color: rgb(255, 255, 255);
+  z-index: 2;
+  opacity: 0;
+}
+
+.card:hover .card__details p {
+  opacity: 1;
+}
+
+.card__details a {
+  position: absolute;
+  bottom: 1em;
+  z-index: 2;
+  opacity: 0;
+}
+
+.card:hover a {
+  opacity: 1;
+}
+
+#card__button {
+  //box-shadow: 0 0 12px black;
+  margin: $spacing-l;
+}
+
+
+
+//Medias Q
+@media (min-width: 540px) {
+  .card {
+    flex-basis: calc(50% - $spacing-l);
+  }
+
+  .card__container {
+    flex-direction: column;
+    justify-content: unset;
+  }
+}
+
+@media (min-width: 960px) {
+  .card {
+    margin: 1em;
+  }
+
+  .card__container {
+    flex-direction: row;
+  }
+  
+}
