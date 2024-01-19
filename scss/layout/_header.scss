@@ -1,0 +1,25 @@
+header{
+    background-color: bisque;
+    height: 500px;
+    background: no-repeat url("https://cdn.discordapp.com/attachments/1196786804494438530/1197852768854093895/kanpo_Moutains_paysage_lake_full_hd_ba56c800-319c-4977-986a-f7582c1c65c9.png?ex=65bcc653&is=65aa5153&hm=c0688b477af709b5ef891dd6e7de73c00d22b567f6ba08c9f4fc5d34387686bf&");
+    background-size: cover;
+
+}
+
+#navBarSection{
+    display: flex;
+    justify-content: space-between;
+}
+#navBarContainer{
+    display: flex;
+}
+#navBarContainer {
+
+ a {
+    margin: 20px 10px;
+}
+}
+.logoDiv{
+    width: 150px;
+    
+}
