@@ -1,43 +1,29 @@
-.hero-section {
-  background-image: linear-gradient(15deg, #0f4667 0%, #2a6973 150%);
+#hero-section {
   display: flex;
   min-height: 100%;
-  width: 90%;
-  justify-content: center;
-  padding: var(--spacing-xxl) var(--spacing-l);
+  width: 80%;
+  flex-direction: column;
+  //padding: var(--spacing-xxl) var(--spacing-l);
 }
 
-.card-container {
+.card__container {
+  height: auto;
   width: 100%;
   display: flex;
   justify-content: space-between;
 }
 
-@media (min-width: 540px) {
-  .card {
-    flex-basis: calc(
-      50% - var(--spacing-l)
-    ); 
+.card__price, .card__heading, .card__details p, .card__details a {
+    transition: all .3s ease;
   }
-}
-
-@media (min-width: 960px) {
-  .card {
-    margin: 1em;
-  }
-}
 
 .card {
   list-style: none;
   position: relative;
   overflow: hidden;
-}
-
-.card:before {
-  content: "";
-  display: block;
-  height: 30vh;
-  width: 50vw;
+  cursor: pointer;
+  transition: all .3s ease;
+  min-height: 35vh;
 }
 
 .card__background {
@@ -51,35 +37,152 @@
   top: 0;
   transform-origin: center;
   transform: scale(1) translateZ(0);
-  transition: filter 200ms linear, transform 200ms linear;
+  transition: all .5s ease;
 }
 
 .card:hover .card__background {
   transform: scale(1.05) translateZ(0);
+  filter: brightness(0.3);
 }
 
-.card-grid:hover > .card:not(:hover) .card__background {
-  filter: brightness(0.5) saturate(0) contrast(1.2) blur(20px);
+.card:hover .card__price{
+    transform: scale(.9) translateX(1em);
 }
+
+.card:hover .card__heading{
+    opacity: 0;
+}
+
 
 .card__content {
   left: 0;
-  padding: var(--spacing-l);
+  padding: var(--spacing-s);
   position: absolute;
-  top: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  width: 100%;
 }
 
 .card__price {
-  color: var(--text-light);
-  font-size: 0.9rem;
-  margin-bottom: var(--spacing-s);
-  text-transform: uppercase;
+    color: white;
+    position: absolute;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.65);
+    padding: 1em;
+    border-radius: 20px 0 0 0;
+    font-size: 1.2rem;
+    //margin-bottom: var(--spacing-s);
+    text-transform: uppercase;
 }
 
 .card__heading {
   color: var(--text-lighter);
   font-size: 1.9rem;
   text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.2);
-  line-height: 1.4;
-  word-spacing: 100vw;
 }
+
+.card__details {
+    color: var(--text-light);
+    padding: var(--spacing-s);
+    font-size: 1.5rem;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.card__details p{
+    font-size: .9em;
+    color: rgb(255, 255, 255);
+    z-index: 2;
+    opacity: 0;
+}
+
+
+.card:hover .card__details p{
+    opacity: 1;
+}
+
+.card__details a{
+    position: absolute;
+    bottom: 1em;
+    z-index: 2;
+    opacity: 0;
+}
+
+.card:hover a{
+    opacity: 1;
+}
+
+.card__button{
+    
+    position: relative;
+    width: 100%;
+}
+
+.btn_shower{
+    box-shadow: 0 10px 12px black;
+}
+
+.card__changeTxt{
+    content:'Afficher moins'
+}
+
+#about-container{
+    margin: var(--spacing-l);
+    display: flex;
+    position: relative;
+    width: 75%;
+    height: 20em;
+    background: rgb(58,91,180);
+    background: linear-gradient(111deg, rgba(58,91,180,1) 0%, rgba(29,210,253,1) 50%, rgba(255,255,255,1) 100%); 
+}
+
+#about-container img{
+    background-size: cover;
+    background-position: center;
+    bottom: 0;
+    filter: brightness(0.75) saturate(1.2) contrast(0.85);
+    transform-origin: center;
+}
+
+.quick__links{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.quick__links a{
+    padding: var(--spacing-l);
+    width: 35%;
+    font-size: medium;
+    font-weight: bold;
+    text-align: center;
+    text-decoration:none
+}
+
+//Medias Q
+@media (min-width: 540px) {
+    .card {
+      flex-basis: calc(
+        50% - var(--spacing-l)
+      ); 
+    }
+  
+    .card-container{
+      flex-direction: column;
+      justify-content:unset;
+    }
+  }
+  
+  @media (min-width: 960px) {
+    .card {
+      margin: 1em;
+    }
+  
+    .card-container{
+      flex-direction: row;
+    }
+  }
