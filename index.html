@@ -8,28 +8,45 @@
       href="https://fonts.googleapis.com/css?family=Montserrat:400,700"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script>
+        $( function() {
+          $( "#datepicker" ).datepicker();
+        } );
+    </script>
     <script src="script.js"></script>
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <div id="navBarSection">
-            <div class="logoDiv">
-                <img src="./ressources/images/logosite.png" alt="logo du site">          
-            </div>
-            <nav id="navBarContainer">
-                <a>Faire un don</a>
-                <a>Profil</a>
-                <a>Nous contacter</a>
-            </nav>
+      <div id="navBarSection">
+        <div class="logoDiv">
+          <img src="./ressources/images/logosite.png" alt="logo du site" />
         </div>
+        <nav id="navBarContainer">
+          <a class="amazing-btn">Faire un don</a>
+          <a class="amazing-btn">Profil</a>
+          <a class="amazing-btn">Nous contacter</a>
+        </nav>
+      </div>
     </header>
     <div class="searchBarSection">
-        <form class="searchBarContainer">
-            <input type="text" placeholder="Où voulez vous partir ?">
-            <input type="text" placeholder="Quelle date ?">
-            <button>O</button>
-        </form>
+      <form class="searchBarContainer">
+        <input type="text" placeholder="Où voulez vous partir ?" />
+        <input
+          type="text"
+          id="datepicker"
+          name="datepicker"
+          placeholder="Cliquez pour choisir une date"
+        />
+        <button><i class="fas fa-search"></i></button>
+      </form>
     </div>
 
     <main>
@@ -283,16 +300,20 @@
       </div>
 
       <section id="about-container">
-        <img src="https://images.pexels.com/photos/2709563/pexels-photo-2709563.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="PDG de l'entreprise en action bénévole">
+        <img
+          src="https://images.pexels.com/photos/2709563/pexels-photo-2709563.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          alt="PDG de l'entreprise en action bénévole"
+        />
         <div id="about-left">
-            <p>Explorez, découvrez, agissez. Nos voyages uniques allient aventure et engagement. Voyagez avec un impact positif.</p>
-            <div class="quick__links"> 
-                <a href="#">Faire un don</a>
-                <a href="#">Pourquoi nous choisir ?</a>
-            </div>
-
+          <p>
+            Explorez, découvrez, agissez. Nos voyages uniques allient aventure
+            et engagement. Voyagez avec un impact positif.
+          </p>
+          <div class="quick__links">
+            <a href="#">Faire un don</a>
+            <a href="#">Pourquoi nous choisir ?</a>
+          </div>
         </div>
-        
       </section>
     </main>
   </body>
