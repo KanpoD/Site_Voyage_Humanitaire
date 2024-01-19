@@ -1,0 +1,49 @@
+/* possibilities*/
+#possibilities{
+    background-color: #efefef;
+    padding: 0px 0;
+    margin: auto;
+}
+#possibilities article{
+    width: 450px;
+    height: 275px;
+    float: left;
+    border-radius: 10px ;
+}
+#possibilities article:first-child{
+    margin-right: 20px;
+}
+.overlay{
+    background: rgba(255,255,255,0.95);
+    height:100%;
+    width: 100px;
+    padding: 20px;
+    border-radius: 10px 0 0 10px;
+
+
+}
+article h1{
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    text-align: center;
+}
+article h2{
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    text-align: center;
+}
+#possibilities p{
+    text-align: center;
+    margin-top: 10px;
+}
+.button-2{
+    color: #fff;
+    background-color: #ff7a00;
+    padding: 6px 20px;
+    border-radius: 3px;
+}
+    
