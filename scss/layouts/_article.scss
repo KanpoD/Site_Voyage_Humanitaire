@@ -1,8 +1,10 @@
-/* possibilities*/
+#wapper{
+    @include flex-container(column, center);
+}
+
 #possibilities{
-    background-color: #efefef;
-    padding: 0px 0;
-    margin: auto;
+    @include flex-container(row, center);
+    width: 100%;
 }
 #possibilities article{
     width: 450px;
@@ -14,26 +16,31 @@
     margin-right: 20px;
 }
 .overlay{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     background: rgba(255,255,255,0.95);
     height:100%;
-    width: 100px;
+    width: 50%;
     padding: 20px;
     border-radius: 10px 0 0 10px;
-
-
 }
+
+article{
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    
+}
+
 article h1{
     border-bottom: 1px solid #ddd;
-    padding-bottom: 20px;
     text-transform: uppercase;
-    margin-bottom: 20px;
     text-align: center;
 }
 article h2{
     border-bottom: 1px solid #ddd;
-    padding-bottom: 20px;
     text-transform: uppercase;
-    margin-bottom: 20px;
     text-align: center;
 }
 #possibilities p{
@@ -45,5 +52,5 @@ article h2{
     background-color: #ff7a00;
     padding: 6px 20px;
     border-radius: 3px;
+    text-decoration: none;
 }
-    

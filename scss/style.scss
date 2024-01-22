@@ -1,6 +1,7 @@
 
-//Varaibles
+//Utils
 @import "utils/variables";
+@import "utils/mixins";
 
 //Pages
 @import "pages/homepage";
@@ -12,14 +13,14 @@
 @import "layouts/card";
 @import "layouts/quickPresentation";
 @import "layouts/decorations";
-
+@import "layouts/scetion_contact";
+@import "layouts/header";
+@import "layouts/article";
 //Components
 @import "components/inputs";
-@import "pages/homepage";
-@import "layouts/header";
 @import "components/searchBar";
+@import "components/footer";
 
-@import "pages/homepage";
-@import "layouts/header";
-@import "components/searchBar";
+
+
 

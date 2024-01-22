@@ -6,48 +6,47 @@ header {
   background-size: cover;
   overflow: hidden;
   box-shadow: 0 0 10px black;
+  position: relative;
+}
+
+#title {
+  width: 100%;
+  align-self: center;
+  text-align: center;
+  font-size: $text-xxlarge;
+  color: white;
+  text-shadow: 0 0 5px black;
 }
 
 #navBarSection {
-    height: 100%;
+  height: 100%;
   display: flex;
   justify-content: space-between;
+  position: relative;
 }
 #navBarContainer {
+  position: absolute;
+  top: .5em;
+  right: 1em;
   display: flex;
 }
-#navBarContainer {
-  a {
-    font-size: $text-lighter;
-    cursor: pointer;
-    margin: 20px 20px;
-    transform-origin: center;
-    height: fit-content;
-    padding: $spacing-s;
-    border-bottom: 1px solid black;
-    transition: all .3s ease;
-  }
 
-  a:hover{
-    transform: scale(1.05);
-  }
+.logoDiv {
+  display: flex;
+  height: 100%;
+  position: absolute;
+  left: 0;
 }
 
-.logoDiv{
-    display: flex;
-    height: 100%;
+.logoDiv img {
+  cursor: pointer;
+  max-height: 100%;
+  width: auto;
+  overflow: hidden;
+  filter: drop-shadow(0 3px 8px rgb(0, 0, 0));
+  transition: all 0.3s ease;
 }
 
-.logoDiv img{
-    cursor: pointer;
-    max-height: 100%;
-    width: auto;
-    overflow: hidden;
-    filter: drop-shadow(0 3px 8px rgb(0, 0, 0));
-    transition: all .3s ease;
+.logoDiv:hover img {
+  transform: scale(1.1);
 }
-
-.logoDiv:hover img{
-    transform: scale(1.1);
-}
-

@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -13,15 +12,18 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
     />
-    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <link
+      rel="stylesheet"
+      href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css"
+    />
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
     <script>
-        $( function() {
-          $( "#datepicker" ).datepicker();
-        } );
+      $(function () {
+        $("#datepicker").datepicker();
+      });
     </script>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" />
     <script src="script.js"></script>
     <title>Document</title>
   </head>
@@ -31,22 +33,48 @@
         <div class="logoDiv">
           <img src="./ressources/images/logosite.png" alt="logo du site" />
         </div>
+        <div id="title">
+          <h1>Human travelers</h1>
+        </div>
         <nav id="navBarContainer">
-          <a class="amazing-btn">Faire un don</a>
-          <a href="/pages/account.html" class="amazing-btn">Profil</a>
-          <a class="amazing-btn">Nous contacter</a>
+          <a class="underline-btn">Faire un don</a>
+          <a href="/pages/account.html" class="underline-btn">Profil</a>
+          <a class="underline-btn">Nous contacter</a>
         </nav>
       </div>
     </header>
     <div class="searchBarSection">
       <form class="searchBarContainer">
-        <input type="text" placeholder="Où voulez vous partir ?" />
-        <input
-          type="text"
-          id="datepicker"
-          name="datepicker"
-          placeholder="Cliquez pour choisir une date"
-        />
+        <div id="where__selection">
+          <input
+            type="text"
+            id="where"
+            name="action"
+            autocomplete="off"
+            placeholder="Où voulez vous partir ?"
+          />
+          <div class="where__suggestions" id="where__suggestions"></div>
+        </div>
+
+        <div id="action__selection">
+          <input
+            type="text"
+            id="action"
+            name="action"
+            autocomplete="off"
+            placeholder="A quel action souhaitez-vous participer"
+          />
+          <div class="action__suggestions" id="action__suggestions"></div>
+        </div>
+        <div>
+          <input
+            type="text"
+            id="datepicker"
+            name="datepicker"
+            placeholder="Choisir une date"
+          />
+        </div>
+
         <button><i class="fas fa-search"></i></button>
       </form>
     </div>
@@ -318,62 +346,107 @@
         </div>
       </section>
       <section id="possibilities">
-    <div class="wrapper">
-
-        <article style="background-image: url(image/plage-de-tuerredda-2.1614169.jpg);">
+        <div class="wrapper">
+          <article
+            style="
+              background-image: url(image/plage-de-tuerredda-2.1614169.jpg);
+            "
+          >
             <div class="overlay">
-                <h1>Situation Actuelle</h1>
-                <p>
-                    Offrez le meilleur à ceux que vous aimez et partager des moments fabuleux
-                </p>
-               
+              <h4>Situation Actuelle</h4>
+              <p>
+                Offrez le meilleur à ceux que vous aimez et partager des moments
+                fabuleux
+              </p>
+              <a href="#" class="button-2">Plus d'infos</a>
             </div>
-            <a href="#" class="button-2">Plus d'infos</a>
-        </article>
-        <article style="background-image: url(image/pexels-pixabay-237272.jpg);">
-             <div class="overlay">
-                <h2>Envie de s'evader</h2>
-                <p>
-                  Parfois un peu d'evasion serait le bienvenue et ferait le plus grand bien!
-                </p>
-                
-             </div>
-             <a href="#" class="button-2">Plus d'infos</a>
-            
-        </article>
-        <article style="background-image: url(image/pexels-jacub-gomez-1142984.jpg);">
+          </article>
+          <article
+            style="background-image: url(image/pexels-pixabay-237272.jpg)"
+          >
             <div class="overlay">
-                <h1>Partez en Famille</h1>
-                <p>
-                    Offrez le meilleur à ceux que vous aimez et partager des moments fabuleux
-                </p>
-               
+              <h4>Envie de s'evader</h4>
+              <p>
+                Parfois un peu d'evasion serait le bienvenue et ferait le plus
+                grand bien!
+              </p>
+              <a href="#" class="button-2">Plus d'infos</a>
             </div>
-            <a href="#" class="button-2">Plus d'infos</a>
-        </article>
-       
-    </div>
-</section>
-<section id="contact">
-    <div class="wrapper">
-        <h3>Contacter-Nous</h3>
-        <p>"But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because</p>
-          <form>
-            <label for="name">Nom</label>
-            <input type="text" id="name" placeholder="Votre nom">
-            <label for="email">Email</label>
-            <input type="text" id="email" placeholder="Votre email">
-            <input type="submit" value="ok" class="button-3">
-
-          </form>
-    </div>
-</section>
-<footer>
-    <div class="wrapper">
-        <h1>Notre Agence<span class="orange">.</span></h1>
-        <div>Copyright @ 2024. Tous droits réservés</div>
-    </div>
-</footer>
+          </article>
+          <article
+            style="background-image: url(image/pexels-jacub-gomez-1142984.jpg)"
+          >
+            <div class="overlay">
+              <h4>Partez en Famille</h4>
+              <p>
+                Offrez le meilleur à ceux que vous aimez et partager des moments
+                fabuleux
+              </p>
+              <a href="#" class="button-2">Plus d'infos</a>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section id="contact">
+        <div id="avis__container">
+          <h2>Avis</h2>
+          <div class="card__avis">
+            <div class="avis">
+              <h4>Tittle</h4>
+              <p>Comment section lorem lorem lorem</p>
+              <p>Date - Prenom</p>
+            </div>
+          </div>
+          <div class="card__avis">
+            <div class="avis">
+              <h4>Tittle</h4>
+              <p>Comment section lorem lorem lorem</p>
+              <p>Date - Prenom</p>
+            </div>
+          </div>
+          <div class="card__avis">
+            <div class="avis">
+              <h4>Tittle</h4>
+              <p>Comment section lorem lorem lorem</p>
+              <p>Date - Prenom</p>
+            </div>
+          </div>
+          <div id="caroussel__input">
+            <button>Previous</button>
+            <button>Next</button>
+          </div>
+        </div>
+        <div id="contact__container">
+          <div>
+            <h3>Contacter-Nous</h3>
+          </div>
+          <div id="form__container">
+            <form>
+              <div id="user_name">
+                <div>
+                  <label for="surname">Nom :</label>
+                  <input type="text" id="surname" placeholder="Votre Nom" />
+                </div>
+                <div>
+                  <label for="name">Prénom :</label>
+                  <input type="text" id="name" placeholder="Votre Prénom" />
+                </div>
+              </div>
+              <label for="email">Email :</label>
+              <input type="text" id="email" placeholder="Votre email" />
+              <input type="submit" value="ok" class="button-3" />
+              <label for="content"></label>
+              <input type="text" id="content" placeholder="Votre message..." />
+            </form>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <div class="wrapper">
+          <h1>Notre Agence<span class="orange">.</span></h1>
+          <div>Copyright @ 2024. Tous droits réservés</div>
+        </div>
+      </footer>
     </main>
   </body>
 </html>

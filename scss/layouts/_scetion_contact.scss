@@ -1,0 +1,73 @@
+#contact {
+  margin: $spacing-xxl;
+  display: flex;
+  
+  border-radius: 10px;
+  overflow: hidden;
+  height: 50vh;
+  width: 75vw;
+}
+#contact__container {
+  display: flex;
+  height: 100%;
+  width: 50%;
+  flex-direction: column;
+  background-color: #ff7a00;
+  padding: 15px 15px;
+}
+
+#form__container form {
+  display: flex;
+  flex-direction: column;
+}
+
+#avis__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 50%;
+  background-color: aqua;
+  position: relative;
+  overflow: hidden;
+}
+
+#avis__container h2{
+    text-align: center;
+    border-bottom: 2px solid black;
+}
+
+.card__avis {
+  border-bottom: 2px solid black;
+  padding: $spacing-m;
+}
+
+    
+#caroussel__input{
+    display: flex;
+}
+
+#caroussel__input button:nth-child(0){
+    position: absolute;
+    left: 0;
+}
+#caroussel__input button:nth-child(1){
+    position: absolute;
+    right: 0;
+}
+
+#user_name{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#user_name input{
+    width: 100%;
+    font-style: italic;
+    padding: $spacing-s;
+    border-radius: $spacing-s;
+}
+
+#content{
+    height: 50%;
+}
